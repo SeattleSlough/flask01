@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -14,9 +14,9 @@ def products():
 def product_detail(id):
     return f"<hw>Product Detail Page for {id}</h4>"
 
-# @app.route("/")
-# def hello_world():
-#     return "<p>Hello, World!</p>"
+@app.route("/example")
+def example():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     # app.run(debug=True)
