@@ -12,7 +12,7 @@ def products():
 
 @app.route("/products/<int:id>")
 def product_detail(id):
-    return "<p>Product Detail Page for {{id}}</p>"
+    return f"<hw>Product Detail Page for {id}</h4>"
 
 # @app.route("/")
 # def hello_world():
