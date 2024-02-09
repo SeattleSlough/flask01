@@ -8,11 +8,11 @@ def hello_world():
 
 @app.route("/products")
 def products():
-    return "<p>Product Page</p>"
+    return "<h1>Product Page</h1>"
 
-# @app.route("/")
-# def hello_world():
-#     return "<p>Hello, World!</p>"
+@app.route("/products/<int:id>")
+def product_detail(id):
+    return "<p>Product Detail Page for {{id}}</p>"
 
 # @app.route("/")
 # def hello_world():
