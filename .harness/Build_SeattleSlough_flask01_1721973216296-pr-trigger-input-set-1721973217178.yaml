@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_SeattleSlough_flask01_1721973216296-pr-trigger-input-set
+  identifier: Build_SeattleSlough_flask01_1721973216296prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_SeattleSlough_flask01_1721973216296
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
